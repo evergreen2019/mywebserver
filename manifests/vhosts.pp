@@ -4,5 +4,10 @@
 #
 # @example
 #   include mywebserver::vhosts
-class mywebserver::vhosts {
+class mywebserver::vhosts(
+$app_vhosts,)
+{
+class {apache::vhosts:
+    vhosts  => $app_vhosts,
+  }
 }
