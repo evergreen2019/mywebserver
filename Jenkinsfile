@@ -6,7 +6,7 @@ node {
    }
 
 node ('puppet-agent') {
-    echo 'running puppet agent on puppet-server'
+    echo 'running puppet agent on puppet-agent'
    sh 'hostname'
    sh 'id'
     sh 'sudo /opt/puppetlabs/bin/puppet agent -t'
