@@ -5,7 +5,7 @@
 # @example
 #   include mywebserver
 class mywebserver {
-notify {"Initializing the mywebserver apache server automated configuration...":}
+notify {"Initializing the mywebserver apache server automated -mahendra-configuration...":}
   class { 'mywebserver::install': }
   class { 'mywebserver::vhosts': }
   class { 'mywebserver::content': }
