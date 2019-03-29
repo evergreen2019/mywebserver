@@ -10,4 +10,5 @@ node ('puppet-agent') {
    sh 'hostname'
    sh 'id'
     sh 'sudo /opt/puppetlabs/bin/puppet agent -t'
+   sh 'exit 0'
 }
