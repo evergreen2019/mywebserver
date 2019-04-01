@@ -1,9 +1,12 @@
 
-   node{  echo 'running puppet agent on puppet-server'
-   sh 'hostname'
-   sh 'id'
-   sh '/var/lib/jenkins/customscripts/puppetjob.sh'
+   node{  
+       stage('DeployGitCode') {
+      echo 'running puppet agent on puppet-server'
+      sh 'hostname'
+      sh 'id'
+      sh '/var/lib/jenkins/customscripts/puppetjob.sh'
     }
+   }
 
 
 
