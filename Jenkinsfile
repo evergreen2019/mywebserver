@@ -1,7 +1,7 @@
 
    node{  
        stage('DeployGitCode') {
-      echo 'running puppet agent on puppet-server'
+      echo 'deploying code in puppet-server'
       sh 'hostname'
       sh 'id'
       sh '/var/lib/jenkins/customscripts/puppetjob.sh'
