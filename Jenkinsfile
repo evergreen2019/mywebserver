@@ -19,7 +19,7 @@ node ('puppet-agent') {
         }
         catch (exc) {
             echo 'Something failed, I should sound the klaxons!'
-            throw
+           
         }
     }
                
