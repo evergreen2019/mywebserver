@@ -13,7 +13,7 @@ class mywebserver::content {
     mode => '0774',
   }
   file{'servid.html':
-    content => "<html><body>This page is hosted in mahendra`s server: $vfqdn <b>This is new change</b>
+    content => "<head>  <style>    div {      padding: 16px;      background-color: #00FF00;    }  </style></head><body>  <div>    <h1>This page is hosted in mahendra`s server: $vfqdn <b>This is new change</b></h1>  </div>
     <p>Today is good day and tomorrow will be better</p></body></html>",
     path=>'/var/www/html/mahendra/servid.html',
     owner => 'www-data',
