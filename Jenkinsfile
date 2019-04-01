@@ -21,7 +21,7 @@ node ('puppet-agent') {
             echo 'Something failed, I should sound the klaxons!'
             throw
         }
-   
+    }
                
     }
 
